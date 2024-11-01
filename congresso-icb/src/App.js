@@ -49,7 +49,7 @@ function App() {
         <div className="bg-gray-100 p-2">
           <div className="space-y-2">
             <div>
-              <h3 className="font-semibold">Andres Aguillera</h3>
+              <h3 className="font-semibold">Andrés Aguilera</h3>
               <p>(Univ. Seville, Spain)</p>
             </div>
             <div>
@@ -66,7 +66,7 @@ function App() {
             </div>
             <div>
               <h3 className="font-semibold">Anna Campalans</h3>
-              <p>(Univ. Paris-Cité, France)</p>
+              <p>(CEA, France)</p>
             </div>
             <div>
               <h3 className="font-semibold">Vanesa Gottifredi</h3>
@@ -104,10 +104,10 @@ function App() {
             </div>
             <div>
               <h3 className="font-semibold">Patricia Kannouche</h3>
-              <p>(Univ. Paris-Saclay, France)</p>
+              <p>(Gustave Roussy Institute, France)</p>
             </div>
             <div>
-              <h3 className="font-semibold">Richard McCullock</h3>
+              <h3 className="font-semibold">Richard McCulloch</h3>
               <p>(Univ. Glasgow, Scotland)</p>
             </div>
             <div>
@@ -120,11 +120,11 @@ function App() {
             </div>
             <div>
               <h3 className="font-semibold">Annabel Quinet</h3>
-              <p>(Univ. Paris-Cité, France)</p>
+              <p>(INSERM, France)</p>
             </div>
             <div>
               <h3 className="font-semibold">Pablo Radicella</h3>
-              <p>(CEA Paris, France)</p>
+              <p>(CEA, France)</p>
             </div>
             <div>
               <h3 className="font-semibold">Carlos Robello</h3>
@@ -132,10 +132,10 @@ function App() {
             </div>
             <div>
               <h3 className="font-semibold">Alain Sarasin</h3>
-              <p>(Institute Gustave Roussy, France)</p>
+              <p>Alain Sarasin (Gustave Roussy Institute, France)</p>
             </div>
             <div>
-              <h3 className="font-semibold">Markus Smolka</h3>
+              <h3 className="font-semibold">Marcus Smolka</h3>
               <p>(Cornell Univ., USA)</p>
             </div>
           </div>

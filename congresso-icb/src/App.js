@@ -150,7 +150,7 @@ function App() {
           <h3>Rodrigo Galhardo (Univ. São Paulo, Brazil)</h3>
           <h3>Nícolas Hoch (Univ. São Paulo, Brazil)</h3>
           <h3>Carlos Menck (Univ. São Paulo, Brazil)</h3>
-          <h3>Nadja Pinto (Univ. São Paulo, Brazil)</h3>
+          <h3>Nadja Souza-Pinto (Univ. São Paulo, Brazil)</h3>
           <h3>Roger Woodgate (NIH, USA)</h3>
         </div>
         <div className="mt-8 text-center w-full md:w-[56%] mx-auto">

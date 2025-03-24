@@ -3,6 +3,7 @@ import logo from './Farm 2025 (1) 1.png';
 import imagem from './Farm 2025 (3) 1.svg';
 import logofooter from './logofooter.png';
 import { useRef } from 'react';
+import React, { useState } from 'react';
 
 function App() {
   const aboutRef = useRef(null);
@@ -14,6 +15,7 @@ function App() {
       ref.current.scrollIntoView({ behavior: 'smooth' });
     }, 300); // Delay de 300ms antes de rolar
   };
+  const [activeDay, setActiveDay] = useState('day1');
 
   return (
     <div className="App">
@@ -142,7 +144,183 @@ function App() {
           </div>
         </div>
       </div>
-
+      <div className="mt-12 px-8 md:px-16">
+      <h1 className="text-3xl font-inter font-bold text-customColor text-center">Conference Schedule</h1>
+      <div className="w-full h-px bg-gray-500 mt-4 mx-auto mb-8"></div>
+      
+      {/* Tabs */}
+      <div className="flex justify-center mb-6">
+        <button 
+          className={`py-4 px-6 font-medium transition-colors ${activeDay === 'day1' ? 'bg-teal-800' : 'bg-teal-400'} text-white`}
+          onClick={() => setActiveDay('day1')}
+        >
+          November 1st
+        </button>
+        <button 
+          className={`py-4 px-6 font-medium transition-colors ${activeDay === 'day2' ? 'bg-teal-800' : 'bg-teal-400'} text-white`}
+          onClick={() => setActiveDay('day2')}
+        >
+          November 2nd
+        </button>
+        <button 
+          className={`py-4 px-6 font-medium transition-colors ${activeDay === 'day3' ? 'bg-teal-800' : 'bg-teal-400'} text-white`}
+          onClick={() => setActiveDay('day3')}
+        >
+          November 3rd
+        </button>
+      </div>
+      
+      {/* Schedule for November 1st */}
+      {activeDay === 'day1' && (
+        <div className="space-y-4 mb-8">
+          {/* Registration */}
+          <div className="bg-gray-100 rounded-lg p-4 flex items-start">
+            <div className="flex-shrink-0 mr-4">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="text-sm font-medium mt-1">8:00 - 10:00</div>
+            </div>
+            <div className="bg-white rounded p-3 flex-grow shadow-sm">
+              <div className="font-medium">Registration</div>
+              <div className="text-sm text-gray-600">(short courses on DNA repair and Mutagenesis from 10:00 to 12:30 hs)</div>
+            </div>
+          </div>
+          
+          {/* Debate */}
+          <div className="bg-gray-100 rounded-lg p-4 flex items-start">
+            <div className="flex-shrink-0 mr-4">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="text-sm font-medium mt-1">10:00 - 12:00</div>
+            </div>
+            <div className="bg-white rounded p-3 flex-grow shadow-sm">
+              <div className="font-medium">Debate of the Theme "The Evolution is a Fact"</div>
+              <div className="text-sm text-gray-600">(in Portuguese) with the book (same title) published by the Brazilian Academy of Sciences in 2024, with the participation of students from a public High School.</div>
+            </div>
+          </div>
+          
+          {/* Opening */}
+          <div className="bg-gray-100 rounded-lg p-4 flex items-start">
+            <div className="flex-shrink-0 mr-4">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="text-sm font-medium mt-1">14:00 - 14:30</div>
+            </div>
+            <div className="bg-white rounded p-3 flex-grow shadow-sm">
+              <div className="font-medium">VII FARM-DNA Opening</div>
+              <div className="text-sm">
+                <span className="font-medium">Carlos Frederico Martins Menck</span>
+                <p>Why do we need a FARM-DNA meeting in Brazil?</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Opening Lectures */}
+          <div className="bg-gray-100 rounded-lg p-4 flex items-start">
+            <div className="flex-shrink-0 mr-4">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="text-sm font-medium mt-1">14:30 - 16:00</div>
+            </div>
+            <div className="bg-white rounded p-3 flex-grow shadow-sm">
+              <div className="font-medium">Opening Lectures</div>
+              <div className="mt-2">
+                <div className="mb-3">
+                  <p className="text-sm text-gray-600">Chair: Nadja C. de Souza-Pinto</p>
+                  <p className="font-medium">Andres Aguilera, Universidad de Sevilla, Seville, Spain</p>
+                  <p className="text-sm">Transcription-replication conflicts in genome instability, a different role for RNA and chromatin</p>
+                </div>
+                <div>
+                  <p className="text-sm text-gray-600">Chair: Carlos Frederico Martins Menck</p>
+                  <p className="font-medium">Alain Sarasin, Institut Goustave Roussi, Villejuif, France</p>
+                  <p className="text-sm">Genomic Analysis of Internal Cancers from Xeroderma Pigmentosum Patients Revealed New Mechanisms of Endogenous Mutagenesis</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Coffee Break */}
+          <div className="bg-gray-100 rounded-lg p-4 flex items-start">
+            <div className="flex-shrink-0 mr-4">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="text-sm font-medium mt-1">16:00 - 16:30</div>
+            </div>
+            <div className="bg-white rounded p-3 flex-grow shadow-sm">
+              <div className="font-medium">Coffee break</div>
+            </div>
+          </div>
+          
+          {/* Symposium 1 */}
+          <div className="bg-gray-100 rounded-lg p-4 flex items-start">
+            <div className="flex-shrink-0 mr-4">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="text-sm font-medium mt-1">16:30 - 18:30</div>
+            </div>
+            <div className="bg-white rounded p-3 flex-grow shadow-sm">
+              <div className="bg-teal-500 text-white p-2 rounded mb-3">
+                <div className="font-medium">Symposium 1 – DNA damage and cancer</div>
+                <div className="text-sm">Chair: Roger Woodgate</div>
+              </div>
+              <div className="space-y-3">
+                <div>
+                  <p className="font-medium">Mark O'Connor, Oncology R&D, AstraZeneca, Cambridge, UK</p>
+                  <p className="text-sm">Targeting tumour DNA repair vulnerabilities to generate new cancer therapies</p>
+                </div>
+                <div>
+                  <p className="font-medium">Jenifer Saffi, UFSPA, RS, Brazil</p>
+                  <p className="text-sm">DNA damage response: influence on the toxicity of antineoplastic compounds and potential value as predictive and prognostic markers in colorectal cancer</p>
+                </div>
+                <div>
+                  <p className="font-medium">Abby Green, Washington University, St. Louis, USA</p>
+                  <p className="text-sm">Exploiting mutagenic processes in cancer for therapeutic benefit</p>
+                </div>
+                <div>
+                  <p className="font-medium">Leonardo Karran Teixeira, Brazilian National Cancer Institute (INCA), Rio de Janeiro, RJ, Brazil</p>
+                  <p className="text-sm">Oncogene-induced replication stress and genomic instability in human cancer</p>
+                </div>
+                <div>
+                  <p className="font-medium text-sm text-gray-600">Short talk (15 min)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Welcome Drink */}
+          <div className="bg-gray-100 rounded-lg p-4 flex items-start">
+            <div className="flex-shrink-0 mr-4">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="text-sm font-medium mt-1">19:00</div>
+            </div>
+            <div className="bg-white rounded p-3 flex-grow shadow-sm">
+              <div className="font-medium">Welcome Drink!</div>
+            </div>
+          </div>
+        </div>
+      )}
       <div className="mt-12 px-8 md:px-16" ref={commiteRef}>
         <h1 className="text-3xl font-inter font-bold text-customColor text-center">Organizing Committee</h1>
         <div className="w-full h-px bg-gray-500 mt-4 mx-auto mb-4"></div>
@@ -166,6 +344,7 @@ function App() {
           <p>&copy; 2025 FARM-DNA. All rights reserved.</p>
         </div>
       </footer>
+    </div>
     </div>
   );
 }

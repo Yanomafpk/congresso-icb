@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        primary: '#46BDCD',
+        primary: '#00708A',
         secondary: '#7A7A7A',
         danger: '#e3342f',
         active: '#e3342f', // Adicione aqui se precisar usar o estado 'active' com `backgroundColor`

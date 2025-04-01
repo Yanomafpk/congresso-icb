@@ -59,7 +59,7 @@ function App() {
         content: (
           <div className="mt-2 text-left">
             <div className="mb-3 text-left">
-              <p className="text-sm text-gray-600 text-left">Chair: Nadja C. de Souza-Pinto</p>
+              <p className="font-medium  text-gray-900 text-left font-bold">Chair: Nadja C. de Souza-Pinto</p>
               <p className="font-medium text-gray-900 text-left">Andres Aguilera, Universidad de Sevilla, Seville, Spain</p>
               <p className="text-sm text-gray-600 text-left">Transcription-replication conflicts in genome instability, a different role for RNA and chromatin</p>
             </div>
@@ -78,11 +78,11 @@ function App() {
       {
         time: "16:30 - 18:30",
         title: "Symposium 1 – DNA damage and cancer",
-        description: "Chair: Roger Woodgate",
         isComplex: true,
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
+              <p className="font-medium text-gray-900 text-left">Chair: Roger Woodgate</p>
               <p className="font-medium text-gray-900 text-left">Mark O'Connor, Oncology R&D, AstraZeneca, Cambridge, UK</p>
               <p className="text-sm text-gray-600 text-left">Targeting tumour DNA repair vulnerabilities to generate new cancer therapies</p>
             </div>
@@ -113,11 +113,11 @@ function App() {
       {
         time: "8:30 - 10:30",
         title: "Symposium 2 – Replication through DNA damage",
-        description: "Chair: Leonardo Karran Teixeira",
         isComplex: true,
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
+              <p className="font-medium text-gray-900 text-left">Chair: Leonardo Karran Teixeira</p>
               <p className="font-medium text-gray-900 text-left">Andre Nussenzweig, National Cancer Institute National Institutes of Health, Rockville, MD, USA</p>
               <p className="text-sm text-gray-600 text-left">Structure and repair of replication-coupled DNA breaks</p>
             </div>
@@ -146,11 +146,11 @@ function App() {
       {
         time: "11:00 - 13:00",
         title: "Symposium 3- Genomic stress and aging",
-        description: "Chair: Rodrigo Galhardo",
         isComplex: true,
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
+              <p className="font-medium text-gray-900 text-left">Chair: Rodrigo Galhardo</p>
               <p className="font-medium text-gray-900 text-left">Vilhelm Bohr, University of Copenhagen, Copenhagen, Denmark</p>
               <p className="text-sm text-gray-600 text-left">DNA damage signaling to mitochondria in neurodegeneration and aging</p>
             </div>
@@ -183,12 +183,12 @@ function App() {
         content: (
           <div className="mt-2 text-left">
             <div className="mb-3 text-left">
-              <p className="text-sm text-gray-600 text-left">Chair: Carlos Renato Machado</p>
+              <p className="font-medium text-gray-900 text-left">Chair: Carlos Renato Machado</p>
               <p className="font-medium text-gray-900 text-left">Richard McCulloch, University of Glasgow, Glasgow, UK</p>
               <p className="text-sm text-gray-600 text-left">A coherent model for the initiation and execution of trypanosome immune evasion through targeted antigen gene recombination?</p>
             </div>
             <div className="text-left">
-              <p className="text-sm text-gray-600 text-left">Chair: Carlos Frederico Martins Menck</p>
+              <p className="font-medium text-gray-900text-left">Chair: Carlos Frederico Martins Menck</p>
               <p className="font-medium text-gray-900 text-left">Roger Woodgate, National Institutes of Health, Bethesda, MD, USA</p>
               <p className="text-sm text-gray-600 text-left">Regulation of Highly Mutagenic PolVR391 in Enterobacteriaceae</p>
             </div>
@@ -202,11 +202,11 @@ function App() {
       {
         time: "15:50 - 17:15",
         title: "Symposium 4 – Is DNA repair similar for different organisms?",
-        description: "Chair: Nicolas Carlos Hoch",
         isComplex: true,
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
+              <p className="font-medium text-gray-900text-left">Chair: Nicolas Carlos Hoch</p>
               <p className="font-medium text-gray-900 text-left">Rodrigo Galhardo, Institute of Biomedical Sciences, Universidade de São Paulo, Brazil</p>
               <p className="text-sm text-gray-600 text-left">Unveiling novel DNA repair pathways in bacteria</p>
             </div>
@@ -231,11 +231,11 @@ function App() {
       {
         time: "8:30 - 10:30",
         title: "Symposium 5 – Responses to genome damage",
-        description: "Chair: Nadja C de Souza-Pinto",
         isComplex: true,
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
+              <p className="font-medium text-gray-900text-left">Chair: Nadja C de Souza-Pinto</p>
               <p className="font-medium text-gray-900 text-left">Nicolas Carlos Hoch, Institute of Chemistry, University of São Paulo, Brazil</p>
               <p className="text-sm text-gray-600 text-left">Molecular mechanisms of cell death by PARP1 hyperactivation</p>
             </div>
@@ -264,11 +264,11 @@ function App() {
       {
         time: "11:00 - 13:00",
         title: "Symposium 6 – DNA damage signaling in Eukaryotic cells",
-        description: "Chair: Marcus Smolka",
         isComplex: true,
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
+              <p className="font-medium text-gray-900text-left">Chair: Marcus Smolka</p>
               <p className="font-medium text-gray-900 text-left">Marcelo Santos da Silva, Institute of Chemistry, University of São Paulo, Brazil</p>
               <p className="text-sm text-gray-600 text-left">Analysis of cytotoxicity caused by thymidine analogs (BrdU and EdU) incorporation in trypanosomatids</p>
             </div>
@@ -297,11 +297,11 @@ function App() {
       {
         time: "14:00 - 16:10",
         title: "Symposium 7 – Nuclear stress and DNA repair",
-        description: "Chair: Vanesa Gottifredi",
         isComplex: true,
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
+              <p className="font-medium text-gray-900text-left">Chair: Vanesa Gottifredi</p>
               <p className="font-medium text-gray-900 text-left">Luis LF Batista, Washington University, St. Louis, USA</p>
               <p className="text-sm text-gray-600 text-left">Stability of the telomerase RNA component is essential for genome integrity and cellular function in the hematopoietic system</p>
             </div>
@@ -335,12 +335,12 @@ function App() {
         content: (
           <div className="mt-2 text-left">
             <div className="mb-3 text-left">
-              <p className="text-sm text-gray-600 text-left">Chair: Carlos Frederico Martins Menck</p>
+              <p className="font-medium text-gray-900 text-left font-bold">Chair: Carlos Frederico Martins Menck</p>
               <p className="font-medium text-gray-900 text-left">Jan Hoeijmakers, Erasmus Medical Center, Rotterdam, The Netherlands</p>
               <p className="text-sm text-gray-600 text-left">DNA damage and transcription stress and the unexpected impact of nutrition on aging and medicine</p>
             </div>
             <div className="text-left">
-              <p className="text-sm text-gray-600 text-left">Chair: Roger Woodgate</p>
+              <p className="font-medium text-gray-900 text-left">Chair: Roger Woodgate</p>
               <p className="font-medium text-gray-900 text-left">Stephen West, The Francis Crick Institute, London, UK</p>
               <p className="text-sm text-gray-600 text-left">Roles of the RAD51 paralogs in DNA repair and replication fork protection – changing paradigms</p>
             </div>

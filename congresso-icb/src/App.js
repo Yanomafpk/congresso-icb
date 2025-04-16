@@ -4,12 +4,16 @@ import imagem from './image_content.svg';
 import logofooter from './foote_image.svg';
 import { useRef } from 'react';
 import React, { useState } from 'react';
+import { Menu, X } from "lucide-react";
 
 function App() {
   const aboutRef = useRef(null);
   const speakersRef = useRef(null);
   const schedule = useRef(null);
   const commiteRef = useRef(null);
+  const abstractRef = useRef(null);
+  const posterInformation = useRef(null);
+  const registration = useRef(null);
   
 
   const handleScrollTo = (ref) => {
@@ -59,12 +63,12 @@ function App() {
         content: (
           <div className="mt-2 text-left">
             <div className="mb-3 text-left">
-              <p className="font-medium  text-gray-900 text-left font-bold">Chair: Nadja C. de Souza-Pinto</p>
+              <p className="font-medium  text-gray-600 text-left ">Chair: Nadja C. de Souza-Pinto</p>
               <p className="font-medium text-gray-900 text-left">Andres Aguilera, Universidad de Sevilla, Seville, Spain</p>
               <p className="text-sm text-gray-600 text-left">Transcription-replication conflicts in genome instability, a different role for RNA and chromatin</p>
             </div>
             <div className="text-left">
-              <p className="text-sm text-gray-600 text-left">Chair: Carlos Frederico Martins Menck</p>
+              <p className="font-medium  text-gray-600 text-left">Chair: Carlos Frederico Martins Menck</p>
               <p className="font-medium text-gray-900 text-left">Alain Sarasin, Institut Goustave Roussi, Villejuif, France</p>
               <p className="text-sm text-gray-600 text-left">Genomic Analysis of Internal Cancers from Xeroderma Pigmentosum Patients Revealed New Mechanisms of Endogenous Mutagenesis</p>
             </div>
@@ -82,7 +86,7 @@ function App() {
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
-              <p className="font-medium text-gray-900 text-left">Chair: Roger Woodgate</p>
+              <p className="font-medium  text-gray-600 text-left">Chair: Roger Woodgate</p>
               <p className="font-medium text-gray-900 text-left">Mark O'Connor, Oncology R&D, AstraZeneca, Cambridge, UK</p>
               <p className="text-sm text-gray-600 text-left">Targeting tumour DNA repair vulnerabilities to generate new cancer therapies</p>
             </div>
@@ -117,7 +121,7 @@ function App() {
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
-              <p className="font-medium text-gray-900 text-left">Chair: Leonardo Karran Teixeira</p>
+              <p className="font-medium  text-gray-600 text-left">Chair: Leonardo Karran Teixeira</p>
               <p className="font-medium text-gray-900 text-left">Andre Nussenzweig, National Cancer Institute National Institutes of Health, Rockville, MD, USA</p>
               <p className="text-sm text-gray-600 text-left">Structure and repair of replication-coupled DNA breaks</p>
             </div>
@@ -150,7 +154,7 @@ function App() {
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
-              <p className="font-medium text-gray-900 text-left">Chair: Rodrigo Galhardo</p>
+              <p className="font-medium  text-gray-600 text-left">Chair: Rodrigo Galhardo</p>
               <p className="font-medium text-gray-900 text-left">Vilhelm Bohr, University of Copenhagen, Copenhagen, Denmark</p>
               <p className="text-sm text-gray-600 text-left">DNA damage signaling to mitochondria in neurodegeneration and aging</p>
             </div>
@@ -183,12 +187,12 @@ function App() {
         content: (
           <div className="mt-2 text-left">
             <div className="mb-3 text-left">
-              <p className="font-medium text-gray-900 text-left">Chair: Carlos Renato Machado</p>
+              <p className="font-medium  text-gray-600 text-left">Chair: Carlos Renato Machado</p>
               <p className="font-medium text-gray-900 text-left">Richard McCulloch, University of Glasgow, Glasgow, UK</p>
               <p className="text-sm text-gray-600 text-left">A coherent model for the initiation and execution of trypanosome immune evasion through targeted antigen gene recombination?</p>
             </div>
             <div className="text-left">
-              <p className="font-medium text-gray-900text-left">Chair: Carlos Frederico Martins Menck</p>
+              <p className="font-medium  text-gray-600 text-left">Chair: Carlos Frederico Martins Menck</p>
               <p className="font-medium text-gray-900 text-left">Roger Woodgate, National Institutes of Health, Bethesda, MD, USA</p>
               <p className="text-sm text-gray-600 text-left">Regulation of Highly Mutagenic PolVR391 in Enterobacteriaceae</p>
             </div>
@@ -206,7 +210,7 @@ function App() {
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
-              <p className="font-medium text-gray-900text-left">Chair: Nicolas Carlos Hoch</p>
+              <p className="font-medium  text-gray-600 text-left">Chair: Nicolas Carlos Hoch</p>
               <p className="font-medium text-gray-900 text-left">Rodrigo Galhardo, Institute of Biomedical Sciences, Universidade de São Paulo, Brazil</p>
               <p className="text-sm text-gray-600 text-left">Unveiling novel DNA repair pathways in bacteria</p>
             </div>
@@ -235,7 +239,7 @@ function App() {
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
-              <p className="font-medium text-gray-900text-left">Chair: Nadja C de Souza-Pinto</p>
+              <p className="font-medium  text-gray-600 text-left">Chair: Nadja C de Souza-Pinto</p>
               <p className="font-medium text-gray-900 text-left">Nicolas Carlos Hoch, Institute of Chemistry, University of São Paulo, Brazil</p>
               <p className="text-sm text-gray-600 text-left">Molecular mechanisms of cell death by PARP1 hyperactivation</p>
             </div>
@@ -268,7 +272,7 @@ function App() {
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
-              <p className="font-medium text-gray-900text-left">Chair: Marcus Smolka</p>
+              <p className="font-medium  text-gray-600 text-left">Chair: Marcus Smolka</p>
               <p className="font-medium text-gray-900 text-left">Marcelo Santos da Silva, Institute of Chemistry, University of São Paulo, Brazil</p>
               <p className="text-sm text-gray-600 text-left">Analysis of cytotoxicity caused by thymidine analogs (BrdU and EdU) incorporation in trypanosomatids</p>
             </div>
@@ -301,7 +305,7 @@ function App() {
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
-              <p className="font-medium text-gray-900text-left">Chair: Vanesa Gottifredi</p>
+              <p className="font-medium  text-gray-600 text-left">Chair: Vanesa Gottifredi</p>
               <p className="font-medium text-gray-900 text-left">Luis LF Batista, Washington University, St. Louis, USA</p>
               <p className="text-sm text-gray-600 text-left">Stability of the telomerase RNA component is essential for genome integrity and cellular function in the hematopoietic system</p>
             </div>
@@ -335,12 +339,12 @@ function App() {
         content: (
           <div className="mt-2 text-left">
             <div className="mb-3 text-left">
-              <p className="font-medium text-gray-900 text-left font-bold">Chair: Carlos Frederico Martins Menck</p>
+              <p className="font-medium  text-gray-600 text-left">Chair: Carlos Frederico Martins Menck</p>
               <p className="font-medium text-gray-900 text-left">Jan Hoeijmakers, Erasmus Medical Center, Rotterdam, The Netherlands</p>
               <p className="text-sm text-gray-600 text-left">DNA damage and transcription stress and the unexpected impact of nutrition on aging and medicine</p>
             </div>
             <div className="text-left">
-              <p className="font-medium text-gray-900 text-left">Chair: Roger Woodgate</p>
+              <p className="font-medium  text-gray-600 text-left">Chair: Roger Woodgate</p>
               <p className="font-medium text-gray-900 text-left">Stephen West, The Francis Crick Institute, London, UK</p>
               <p className="text-sm text-gray-600 text-left">Roles of the RAD51 paralogs in DNA repair and replication fork protection – changing paradigms</p>
             </div>
@@ -349,17 +353,37 @@ function App() {
       }
     ]
 };
-
+const [isMenuOpen, setIsMenuOpen] = useState(false);
+const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   
 
   return (
     <div className="App">
-      <header className="bg-primary h-16 mx-auto p-6 flex items-center justify-between">
+      <header className="bg-primary h-16 px-6 flex items-center justify-between">
         <img src={logo} alt="Logo da conferência" className="w-16 h-16 object-contain" />
-        <nav className="flex space-x-6 text-base">
+
+        {/* Botão hambúrguer (visível apenas em telas pequenas) */}
+        <button
+          className="md:hidden text-white"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+
+        {/* Menu de navegação (visível em telas médias pra cima ou quando menu aberto) */}
+        <nav
+          className={`
+            ${isMenuOpen ? "flex flex-col absolute top-16 left-0 w-full bg-primary z-10 p-4 space-y-4" : "hidden"}
+            md:flex md:flex-row md:space-x-6 md:static md:bg-transparent md:p-0 md:space-y-0 text-base
+          `}
+        >
           <a href="#About" className="text-white hover:text-gray-300" onClick={() => handleScrollTo(aboutRef)}>About</a>
+          <a href="#Abstract" className="text-white hover:text-gray-300" onClick={() => handleScrollTo(abstractRef)}>Abstracts</a>
+          <a href="#PosterInformation" className="text-white hover:text-gray-300" onClick={() => handleScrollTo(posterInformation)}>Posters</a>
+          <a href="#Registration" className="text-white hover:text-gray-300" onClick={() => handleScrollTo(registration)}>Registration</a>
           <a href="#Speakers" className="text-white hover:text-gray-300" onClick={() => handleScrollTo(speakersRef)}>Speakers</a>
-          <a href="#ConferenceSchedule" className="text-white hover:text-gray-300" onClick={() => handleScrollTo(schedule)}>Conference Schedule</a>
+          <a href="#ConferenceSchedule" className="text-white hover:text-gray-300" onClick={() => handleScrollTo(schedule)}>Programme</a>
           <a href="#Commite" className="text-white hover:text-gray-300" onClick={() => handleScrollTo(commiteRef)}>Committee</a>
         </nav>
       </header>
@@ -381,114 +405,280 @@ function App() {
         <h1 className="text-3xl font-inter font-bold text-customColor text-center">About The Meeting</h1>
         <div className="w-full h-px bg-gray-500 mt-4 mx-auto"></div>
         <p className="mt-6 text-left text-base">
-          Fundamental Aspects of DNA Repair and Mutagenesis (FARM-DNA) is an international conference in the area of DNA repair, mutagenesis, and genomic stability, that fosters interactions between scientists and students in a stimulating and open setting that facilitates the exchange of ideas and expertise.
+        Fundamental Aspects of Mutagenesis and DNA Repair (FARM-DNA) is an international conference in the area of DNA repair, mutagenesis and genomic stability. This will be the 7th edition in a series of conferences organized on DNA Repair and Mutagenesis, that are focused on rare human diseases, that take place in Brazil every four to five years, since 1999. All previous conferences have attracted eminent experts from different parts of the world and have been a great scientific success. The aim of the conference is to present and discuss the results of the latest research on all relevant aspects of DNA repair and mutagenesis, including mechanisms related to several human rare syndromes, that also impact the whole population. The conference will provide an excellent opportunity to present the latest research on DNA repair and mutagenesis and bring together a diverse group of leading scientists from around the world. 
         </p>
         <p className="mt-4 text-left text-base">
-          Previous editions were held in São Paulo (1999, 2003, 2007, 2013 and 2018) and in Belo Horizonte (2009). The 2013 and 2018 editions were satellite meetings to the International Conference on Environmental Mutagenesis (ICEM - 2013) and the International Congress of Genetics (ICG - 2018), and the 2025 edition will be a satellite meeting to the Brazilian Mutagenesis Society meeting in Natal.
+        We look forward to welcoming you to São Paulo in November!
         </p>
       </div>
 
-      <div className="mt-12 px-8 md:px-16" ref={speakersRef}>
-        <h1 className="text-3xl font-inter font-bold text-customColor text-center">Invited Speakers</h1>
-        <div className="w-full h-px bg-gray-500 mt-4 mx-auto mb-4"></div>
-        <div className="grid grid-cols-1 min400:grid-cols-2 gap-4 w-full md:w-10/12 mx-auto p-4 text-base">
-          {/* Coluna 1 */}
-          <div className="bg-gray-100 p-4">
-            <div className="space-y-4">
-              <div>
-                <h3 className="font-semibold">Andrés Aguilera</h3>
-                <p>(Univ. Seville, Spain)</p>
-              </div>
-              <div>
-                <h3 className="font-semibold">Luís Batista</h3>
-                <p>(Washington Univ. St. Louis, USA)</p>
-              </div>
-              <div>
-                <h3 className="font-semibold">Vilhelm Bohr</h3>
-                <p>(Univ. Copenhagen, Denmark)</p>
-              </div>
-              <div>
-                <h3 className="font-semibold">Keith Caldecott</h3>
-                <p>(Univ. Sussex, UK)</p>
-              </div>
-              <div>
-                <h3 className="font-semibold">Anna Campalans</h3>
-                <p>(CEA, France)</p>
-              </div>
-              <div>
-                <h3 className="font-semibold">Vanesa Gottifredi</h3>
-                <p>(Institute Leloir, Argentina)</p>
-              </div>
-              <div>
-                <h3 className="font-semibold">Abby Green</h3>
-                <p>(Washington Univ. St. Louis, USA)</p>
-              </div>
-              <div>
-                <h3 className="font-semibold">Jan Hoeijmakers</h3>
-                <p>(Erasmus MC, Netherlands)</p>
-              </div>
-              <div>
-                <h3 className="font-semibold">Gianluca Tell</h3>
-                <p>(Univ. Udine, Italy)</p>
-              </div>
-              <div>
-                <h3 className="font-semibold">Stephen West</h3>
-                <p>(Francis Crick Institute, UK)</p>
-              </div>
-              <div>
-                <h3 className="font-semibold">Evi Soutoglou</h3>
-                <p>(Univ. Sussex, UK)</p>
+      <div className="mt-8 px-8 md:px-16" ref={abstractRef}>
+        <h1 className="text-3xl font-inter font-bold text-customColor text-center">Abstract Information</h1>
+        <div className="w-full h-px bg-gray-500 mt-4 mx-auto"></div>
+        <p className="mt-6 text-left text-base">
+          Please submit your abstracts directly in the registration form, which can be accessed by clicking the <strong>"Register"</strong> button at the top of the page.
+        </p>
+        <p className="mt-4 text-left text-base">
+          Abstracts should be written in English and contain a title, full author names, author affiliations, and a main text (limited to 3000 characters). Please paste the relevant text directly in the appropriate sections of the registration form, following the examples provided in the form. There will be no option for uploading any files.
+        </p>
+        <p className="mt-4 text-left text-base">
+          Abstract submission automatically implies that you are expected to present a poster (more info on poster presentation in the relevant section).
+        </p>
+        <p className="mt-4 text-left text-base">
+          A small number of abstracts will be selected for oral presentations. Selected oral presentations will be 15 minutes long, and selected speakers will be automatically removed from the poster session. To be considered for an oral presentation, please register by the Early Registration deadline (31/07/25) and indicate your interest in the registration form.
+        </p>
+      </div>
+
+      <div className="mt-8 px-8 md:px-16" ref={posterInformation}>
+          <h1 className="text-3xl font-inter font-bold text-customColor text-center">Poster information</h1>
+          <div className="w-full h-px bg-gray-500 mt-4 mx-auto"></div>
+            <p className="mt-4 text-left text-base">Posters should be prepared in English and illustrate your research results in a clear and concise manner.</p>
+            <p className="mt-4 text-left text-base">Posters should be no bigger than 90cm x 120cm.</p>
+            <p className="mt-4 text-left text-base">You will be able to display your poster at your designated poster board throughout the whole meeting, and we encourage you to present your poster to other participants during lunch and/or coffee breaks, as well as during the allocated poster session on Sunday evening.</p>
+      </div>
+
+      <div className="mt-8 px-8 md:px-16"  ref={registration}>
+          <h1 className="text-3xl font-inter font-bold text-customColor text-center">Registration</h1>
+          <div className="w-full h-px bg-gray-500 mt-4 mx-auto"></div>
+          <div className="space-y-6 text-lg leading-relaxed">
+          <p className="mt-4 text-left text-base">
+            Please register using the following link{" "}
+            <a href="https://forms.gle/UibDKTz8EYf1eD7j9" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
+              (here)
+            </a>.
+          </p>
+            <p className="mt-4 text-left text-base">
+              Registration fees for Brazilian attendees are displayed in Reais (R$) and are based on career stage and on membership to Mutagen-Brasil. Registration fees for international attendees are based solely on career stage and are displayed in US dollars (US$):
+            </p>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-2">Early Registrations (until 31/07/2025):</h3>
+              <div className="overflow-auto">
+                <table className="min-w-full border border-gray-300 text-sm md:text-base">
+                  <thead className="bg-gray-200">
+                    <tr>
+                      <th className="border px-4 py-2 text-left">Category</th>
+                      <th className="border px-4 py-2 text-left">Member of Mutagen-Brasil</th>
+                      <th className="border px-4 py-2 text-left">Non-member</th>
+                      <th className="border px-4 py-2 text-left">International Attendees</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border px-4 py-2">Professional</td>
+                      <td className="border px-4 py-2">R$ 400</td>
+                      <td className="border px-4 py-2">R$ 800</td>
+                      <td className="border px-4 py-2">US$ 250</td>
+                    </tr>
+                    <tr>
+                      <td className="border px-4 py-2">Postdoctoral Fellow</td>
+                      <td className="border px-4 py-2">R$ 300</td>
+                      <td className="border px-4 py-2">R$ 600</td>
+                      <td className="border px-4 py-2">US$ 200</td>
+                    </tr>
+                    <tr>
+                      <td className="border px-4 py-2">Postgraduate Student</td>
+                      <td className="border px-4 py-2">R$ 200</td>
+                      <td className="border px-4 py-2">R$ 400</td>
+                      <td className="border px-4 py-2">US$ 150</td>
+                    </tr>
+                    <tr>
+                      <td className="border px-4 py-2">Undergraduate Student</td>
+                      <td className="border px-4 py-2">R$ 100</td>
+                      <td className="border px-4 py-2">R$ 200</td>
+                      <td className="border px-4 py-2">US$ 100</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-          </div>
 
-          {/* Coluna 2 */}
-          <div className="bg-gray-100 p-4">
-            <div className="space-y-4">
-              <div>
-                <h3 className="font-semibold">David Wilson</h3>
-                <p>(Hasselt Univ., Belgium)</p>
+            <div>
+              <h3 className="text-xl font-semibold mb-2">Late Registrations (01/08/2025 to 31/10/25):</h3>
+              <div className="overflow-auto">
+                <table className="min-w-full border border-gray-300 text-sm md:text-base">
+                  <thead className="bg-gray-200">
+                    <tr>
+                      <th className="border px-4 py-2 text-left">Category</th>
+                      <th className="border px-4 py-2 text-left">Member of Mutagen-Brasil</th>
+                      <th className="border px-4 py-2 text-left">Non-member</th>
+                      <th className="border px-4 py-2 text-left">International Attendees</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border px-4 py-2">Professional</td>
+                      <td className="border px-4 py-2">R$ 500</td>
+                      <td className="border px-4 py-2">R$ 900</td>
+                      <td className="border px-4 py-2">US$ 300</td>
+                    </tr>
+                    <tr>
+                      <td className="border px-4 py-2">Postdoctoral Fellow</td>
+                      <td className="border px-4 py-2">R$ 400</td>
+                      <td className="border px-4 py-2">R$ 700</td>
+                      <td className="border px-4 py-2">US$ 250</td>
+                    </tr>
+                    <tr>
+                      <td className="border px-4 py-2">Postgraduate Student</td>
+                      <td className="border px-4 py-2">R$ 300</td>
+                      <td className="border px-4 py-2">R$ 500</td>
+                      <td className="border px-4 py-2">US$ 200</td>
+                    </tr>
+                    <tr>
+                      <td className="border px-4 py-2">Undergraduate Student</td>
+                      <td className="border px-4 py-2">R$ 150</td>
+                      <td className="border px-4 py-2">R$ 250</td>
+                      <td className="border px-4 py-2">US$ 150</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <div>
-                <h3 className="font-semibold">Patricia Kannouche</h3>
-                <p>(Gustave Roussy Institute, France)</p>
-              </div>
-              <div>
-                <h3 className="font-semibold">Richard McCulloch</h3>
-                <p>(Univ. Glasgow, Scotland)</p>
-              </div>
-              <div>
-                <h3 className="font-semibold">Manuel Muñoz</h3>
-                <p>(Univ. Buenos Aires, Argentina)</p>
-              </div>
-              <div>
-                <h3 className="font-semibold">André Nussenzweig</h3>
-                <p>(NIH, USA)</p>
-              </div>
-              <div>
-                <h3 className="font-semibold">Annabel Quinet</h3>
-                <p>(INSERM, France)</p>
-              </div>
-              <div>
-                <h3 className="font-semibold">Pablo Radicella</h3>
-                <p>(CEA, France)</p>
-              </div>
-              <div>
-                <h3 className="font-semibold">Carlos Robello</h3>
-                <p>(Institute Pasteur, Uruguay)</p>
-              </div>
-              <div>
-                <h3 className="font-semibold">Alain Sarasin</h3>
-                <p>(Gustave Roussy Institute, France)</p>
-              </div>
-              <div>
-                <h3 className="font-semibold">Marcus Smolka</h3>
-                <p>(Cornell Univ., USA)</p>
-              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mt-8 mb-2">Payment information:</h3>
+              <p>For Brazilian attendees, please pay the relevant registration fees to Mutagen-Brasil:</p>
+              <ul className="list-disc list-inside ml-6 space-y-1">
+                <li>Via PIX: CNPJ 00.133.032/0001-65</li>
+                <li>Or by bank transfer: Banco do Brasil | Ag: 3312-X | c/c: 22685-8</li>
+              </ul>
+              <p className="mt-4">For international attendees, please contact the organization (<a href="mailto:nicolas@iq.usp.br" className="text-blue-600 underline">nicolas@iq.usp.br</a>) for payment instructions.</p>
+            </div>
+          </div>
+      </div>
+
+
+      <div className="mt-12 px-8 md:px-16" ref={speakersRef}>
+      <h1 className="text-3xl font-inter font-bold text-customColor text-center">Invited Speakers</h1>
+      <div className="w-full h-px bg-gray-500 mt-4 mx-auto mb-4"></div>
+      <div className="grid grid-cols-1 min400:grid-cols-2 gap-4 w-full md:w-10/12 mx-auto p-4 text-base">
+        {/* Coluna 1 */}
+        <div className="bg-gray-100 p-4">
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-semibold">Abby Green</h3>
+              <p>(Washington Univ. St. Louis, USA)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Alain Sarasin</h3>
+              <p>(Gustave Roussy Institute, France)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">André Nussenzweig</h3>
+              <p>(NIH, USA)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Andrés Aguilera</h3>
+              <p>(Univ. Seville, Spain)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Anna Campalans</h3>
+              <p>(CEA, France)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Carlos Renato Machado</h3>
+              <p>(UFMG, Brazil)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Carlos Robello</h3>
+              <p>(Institute Pasteur, Uruguay)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">David Wilson</h3>
+              <p>(Hasselt Univ., Belgium)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Evi Soutoglou</h3>
+              <p>(Univ. Sussex, UK)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Francisco Bastos de Oliveira</h3>
+              <p>(UFRJ, Brazil)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Gianluca Tell</h3>
+              <p>(Univ. Udine, Italy)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Jan Hoeijmakers</h3>
+              <p>(Erasmus MC, Netherlands)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Jenifer Saffi</h3>
+              <p>(UFCSPA, Brazil)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">José Renato Cussiol</h3>
+              <p>(UNIFESP, Brazil)</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Coluna 2 */}
+        <div className="bg-gray-100 p-4">
+          <div className="space-y-4">
+
+            <div>
+              <h3 className="font-semibold">Keith Caldecott</h3>
+              <p>(Univ. Sussex, UK)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Leonardo Karam Teixeira</h3>
+              <p>(INCA, Brazil)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Luís Batista</h3>
+              <p>(Washington Univ. St. Louis, USA)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Marcelo Santos da Silva</h3>
+              <p>(USP, Brazil)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Maria Carolina Elias Sabbaga</h3>
+              <p>(Butantan Institute, Brazil)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Manuel Muñoz</h3>
+              <p>(Univ. Buenos Aires, Argentina)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Marcus Smolka</h3>
+              <p>(Cornell Univ., USA)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Patricia Kannouche</h3>
+              <p>(Gustave Roussy Institute, France)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Pablo Radicella</h3>
+              <p>(CEA, France)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Richard McCulloch</h3>
+              <p>(Univ. Glasgow, Scotland)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Stephen West</h3>
+              <p>(Francis Crick Institute, UK)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Vanesa Gottifredi</h3>
+              <p>(Institute Leloir, Argentina)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Vilhelm Bohr</h3>
+              <p>(Univ. Copenhagen, Denmark)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Annabel Quinet</h3>
+              <p>(INSERM, France)</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+
       <div className="mt-12 px-8 md:px-16">
               
       <div className="w-full mx-auto">

@@ -87,7 +87,6 @@ function App() {
           <div className="space-y-3 mt-2 text-left">
             <div>
               <p className="font-medium  text-gray-600 text-left">Chair: Roger Woodgate</p>
-              <p className="font-medium text-gray-900 text-left">Mark O'Connor, Oncology R&D, AstraZeneca, Cambridge, UK</p>
               <p className="text-sm text-gray-600 text-left">Targeting tumour DNA repair vulnerabilities to generate new cancer therapies</p>
             </div>
             <div>
@@ -95,11 +94,15 @@ function App() {
               <p className="text-sm text-gray-600 text-left">DNA damage response: influence on the toxicity of antineoplastic compounds and potential value as predictive and prognostic markers in colorectal cancer</p>
             </div>
             <div>
+              <p className="font-medium text-gray-900 text-left">Patricia Opresko, Univ. Pittsburgh, USA</p>
+              <p className="text-sm text-gray-600 text-left">Oxidative DNA Damage and Repair at Telomeres</p>
+            </div>
+            <div>
               <p className="font-medium text-gray-900 text-left">Abby Green, Washington University, St. Louis, USA</p>
               <p className="text-sm text-gray-600 text-left">Exploiting mutagenic processes in cancer for therapeutic benefit</p>
             </div>
             <div>
-              <p className="font-medium text-gray-900 text-left">Leonardo Karran Teixeira, Brazilian National Cancer Institute (INCA), Rio de Janeiro, RJ, Brazil</p>
+              <p className="font-medium text-gray-900 text-left">Leonardo Karam Teixeira, Brazilian National Cancer Institute (INCA), Rio de Janeiro, RJ, Brazil</p>
               <p className="text-sm text-gray-600 text-left">Oncogene-induced replication stress and genomic instability in human cancer</p>
             </div>
             <div>
@@ -121,7 +124,7 @@ function App() {
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
-              <p className="font-medium  text-gray-600 text-left">Chair: Leonardo Karran Teixeira</p>
+              <p className="font-medium  text-gray-600 text-left">Chair: Leonardo Karam Teixeira</p>
               <p className="font-medium text-gray-900 text-left">Andre Nussenzweig, National Cancer Institute National Institutes of Health, Rockville, MD, USA</p>
               <p className="text-sm text-gray-600 text-left">Structure and repair of replication-coupled DNA breaks</p>
             </div>
@@ -405,7 +408,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
         <h1 className="text-3xl font-inter font-bold text-customColor text-center">About The Meeting</h1>
         <div className="w-full h-px bg-gray-500 mt-4 mx-auto"></div>
         <p className="mt-6 text-left text-base">
-        Fundamental Aspects of Mutagenesis and DNA Repair (FARM-DNA) is an international conference in the area of DNA repair, mutagenesis and genomic stability. This will be the 7th edition in a series of conferences organized on DNA Repair and Mutagenesis, that are focused on rare human diseases, that take place in Brazil every four to five years, since 1999. All previous conferences have attracted eminent experts from different parts of the world and have been a great scientific success. The aim of the conference is to present and discuss the results of the latest research on all relevant aspects of DNA repair and mutagenesis, including mechanisms related to several human rare syndromes, that also impact the whole population. The conference will provide an excellent opportunity to present the latest research on DNA repair and mutagenesis and bring together a diverse group of leading scientists from around the world. 
+        Fundamental Aspects of DNA Repair and Mutagenesis (FARM-DNA) is an international conference in the area of DNA repair, mutagenesis and genomic stability. This will be the 7th edition in a series of conferences organized on DNA Repair and Mutagenesis, that are focused on rare human diseases, that take place in Brazil every four to five years, since 1999. All previous conferences have attracted eminent experts from different parts of the world and have been a great scientific success. The aim of the conference is to present and discuss the results of the latest research on all relevant aspects of DNA repair and mutagenesis, including mechanisms related to several human rare syndromes, that also impact the whole population. The conference will provide an excellent opportunity to present the latest research on DNA repair and mutagenesis and bring together a diverse group of leading scientists from around the world. 
         </p>
         <p className="mt-4 text-left text-base">
         We look forward to welcoming you to São Paulo in November!
@@ -536,7 +539,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mt-8 mb-2">Payment information:</h3>
+              <h3 className="text-xl font-semibold mt-8 mb-2">Payment Information:</h3>
               <p>For Brazilian attendees, please pay the relevant registration fees to Mutagen-Brasil:</p>
               <ul className="list-disc list-inside ml-6 space-y-1">
                 <li>Via PIX: CNPJ 00.133.032/0001-65</li>
@@ -576,6 +579,10 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
               <p>(CEA, France)</p>
             </div>
             <div>
+              <h3 className="font-semibold">Annabel Quinet</h3>
+              <p>(INSERM, France)</p>
+            </div>
+            <div>
               <h3 className="font-semibold">Carlos Renato Machado</h3>
               <p>(UFMG, Brazil)</p>
             </div>
@@ -600,6 +607,10 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
               <p>(Univ. Udine, Italy)</p>
             </div>
             <div>
+              <h3 className="font-semibold">Hannes Lans</h3>
+              <p>(Erasmus MC, Netherlands)</p>
+            </div>
+            <div>
               <h3 className="font-semibold">Jan Hoeijmakers</h3>
               <p>(Erasmus MC, Netherlands)</p>
             </div>
@@ -607,17 +618,16 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
               <h3 className="font-semibold">Jenifer Saffi</h3>
               <p>(UFCSPA, Brazil)</p>
             </div>
-            <div>
-              <h3 className="font-semibold">José Renato Cussiol</h3>
-              <p>(UNIFESP, Brazil)</p>
-            </div>
           </div>
         </div>
 
         {/* Coluna 2 */}
         <div className="bg-gray-100 p-4">
           <div className="space-y-4">
-
+            <div>
+              <h3 className="font-semibold">José Renato Cussiol</h3>
+              <p>(UNIFESP, Brazil)</p>
+            </div>
             <div>
               <h3 className="font-semibold">Keith Caldecott</h3>
               <p>(Univ. Sussex, UK)</p>
@@ -651,6 +661,10 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
               <p>(Gustave Roussy Institute, France)</p>
             </div>
             <div>
+              <h3 className="font-semibold">Patricia Opresko</h3>
+              <p>(Univ. Pittsburgh, USA)</p>
+            </div>
+            <div>
               <h3 className="font-semibold">Pablo Radicella</h3>
               <p>(CEA, France)</p>
             </div>
@@ -670,10 +684,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
               <h3 className="font-semibold">Vilhelm Bohr</h3>
               <p>(Univ. Copenhagen, Denmark)</p>
             </div>
-            <div>
-              <h3 className="font-semibold">Annabel Quinet</h3>
-              <p>(INSERM, France)</p>
-            </div>
+
           </div>
         </div>
       </div>
@@ -682,7 +693,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
       <div className="mt-12 px-8 md:px-16">
               
       <div className="w-full mx-auto">
-      <h1 className="text-3xl font-inter font-bold text-customColor text-center">VII FARM-DNA Conference Schedule</h1>
+      <h1 className="text-3xl font-inter font-bold text-customColor text-center">Preliminary Programme</h1>
       <div className="w-full h-px bg-gray-500 mt-4 mx-auto mb-4"></div>
       
       {/* Day selection tabs */}

@@ -310,7 +310,7 @@ function App() {
             <div>
               <p className="font-medium  text-gray-600 text-left">Chair: Vanesa Gottifredi</p>
               <p className="font-medium text-gray-900 text-left">Luis LF Batista, Washington University, St. Louis, USA</p>
-              <p className="text-sm text-gray-600 text-left">Stability of the telomerase RNA component is essential for genome integrity and cellular function in the hematopoietic system</p>
+              <p className="text-sm text-gray-600 text-left">Genomic instability – a unifying feature of bone marrow failure syndromes</p>
             </div>
             <div>
               <p className="font-medium text-gray-900 text-left">Gianluca Tell, University of Udine, Udine, Italy</p>
@@ -460,10 +460,10 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
                 <table className="min-w-full border border-gray-300 text-sm md:text-base">
                   <thead className="bg-gray-200">
                     <tr>
-                      <th className="border px-4 py-2 text-left">Category</th>
-                      <th className="border px-4 py-2 text-left">Member of Mutagen-Brasil</th>
-                      <th className="border px-4 py-2 text-left">Non-member</th>
-                      <th className="border px-4 py-2 text-left">International Attendees</th>
+                      <th className="border px-4 py-2 ">Category</th>
+                      <th className="border px-4 py-2 ">Member of Mutagen-Brasil</th>
+                      <th className="border px-4 py-2 ">Non-member</th>
+                      <th className="border px-4 py-2 ">International Attendees</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -502,10 +502,10 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
                 <table className="min-w-full border border-gray-300 text-sm md:text-base">
                   <thead className="bg-gray-200">
                     <tr>
-                      <th className="border px-4 py-2 text-left">Category</th>
-                      <th className="border px-4 py-2 text-left">Member of Mutagen-Brasil</th>
-                      <th className="border px-4 py-2 text-left">Non-member</th>
-                      <th className="border px-4 py-2 text-left">International Attendees</th>
+                      <th className="border px-4 py-2 ">Category</th>
+                      <th className="border px-4 py-2 ">Member of Mutagen-Brasil</th>
+                      <th className="border px-4 py-2 ">Non-member</th>
+                      <th className="border px-4 py-2 ">International Attendees</th>
                     </tr>
                   </thead>
                   <tbody>

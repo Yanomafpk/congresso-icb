@@ -309,7 +309,7 @@ function App() {
           <div className="space-y-3 mt-2 text-left">
             <div>
               <p className="font-medium  text-gray-600 text-left">Chair: Vanesa Gottifredi</p>
-              <p className="font-medium text-gray-900 text-left">Luis LF Batista, Washington University, St. Louis, USA</p>
+              <p className="font-medium text-gray-900 text-left">Luís LF Batista, Washington University, St. Louis, USA</p>
               <p className="text-sm text-gray-600 text-left">Genomic instability – a unifying feature of bone marrow failure syndromes</p>
             </div>
             <div>
@@ -392,6 +392,20 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
       </header>
 
       <div className="flex flex-col items-center mt-8 space-y-4">
+        <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 w-full max-w-3xl mx-auto mb-4">
+          <div className="flex items-center">
+            <div className="flex-shrink-0">
+              <svg className="h-5 w-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2h-1V9a1 1 0 00-1-1z" clipRule="evenodd" />
+              </svg>
+            </div>
+            <div className="ml-3">
+              <p className="text-sm text-yellow-800 font-medium">
+                IMPORTANT: Early registration deadline has been extended to August 14th, 2025!
+              </p>
+            </div>
+          </div>
+        </div>
         <img
           src={imagem}
           alt="Imagem representativa da conferência"
@@ -415,6 +429,41 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
         </p>
       </div>
 
+      <div className="mt-8 px-8 md:px-16">
+        <h1 className="text-3xl font-inter font-bold text-customColor text-center">Location</h1>
+        <div className="w-full h-px bg-gray-500 mt-4 mx-auto"></div>
+        <p className="mt-6 text-left text-base">
+          The conference will take place at the Institute of Chemistry, University of São Paulo (USP).
+        </p>
+        <p className="mt-2 text-left text-base">
+          <strong>Address:</strong> Av. Prof. Lineu Prestes, 748 - Butantã, São Paulo - SP, 05508-900
+        </p>
+        <p className="mt-2 text-left text-base">
+          <a 
+            href="https://www.google.com/maps/place/Av.+Prof.+Lineu+Prestes,+748+-+Butant%C3%A3,+S%C3%A3o+Paulo+-+SP,+05508-000/@-23.5652968,-46.7258274,1086m/data=!3m2!1e3!4b1!4m6!3m5!1s0x94ce564179cecaf5:0xeadbfd378f93bec!8m2!3d-23.5652968!4d-46.7258274!16s%2Fg%2F11nnt06l7q?entry=ttu&g_ep=EgoyMDI1MDczMC4wIKXMDSoASAFQAw%3D%3D" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="inline-flex items-center text-blue-600 hover:text-blue-800"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+            </svg>
+            Get directions on Google Maps
+          </a>
+        </p>
+        <div className="mt-4 w-full">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8908386467937!2d-46.73486222363744!3d-23.5647336590376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5613b7453b87%3A0x3858f7e5e05fef0a!2sInstituto%20de%20Qu%C3%ADmica%20da%20Universidade%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1723756958844!5m2!1spt-BR!2sbr"
+            width="100%" 
+            height="450" 
+            style={{border:0}} 
+            allowFullScreen="" 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
       <div className="mt-8 px-8 md:px-16" ref={abstractRef}>
         <h1 className="text-3xl font-inter font-bold text-customColor text-center">Abstract Information</h1>
         <div className="w-full h-px bg-gray-500 mt-4 mx-auto"></div>
@@ -428,7 +477,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
           Abstract submission automatically implies that you are expected to present a poster (more info on poster presentation in the relevant section).
         </p>
         <p className="mt-4 text-left text-base">
-          A small number of abstracts will be selected for oral presentations. Selected oral presentations will be 15 minutes long, and selected speakers will be automatically removed from the poster session. To be considered for an oral presentation, please register by the Early Registration deadline (31/07/25) and indicate your interest in the registration form.
+          A small number of abstracts will be selected for oral presentations. Selected oral presentations will be 15 minutes long, and selected speakers will be automatically removed from the poster session. To be considered for an oral presentation, please register by the Early Registration deadline (14/08/25) and indicate your interest in the registration form.
         </p>
       </div>
 
@@ -455,7 +504,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
             </p>
 
             <div>
-              <h3 className="text-xl font-semibold mb-2">Early Registrations (until 31/07/2025):</h3>
+              <h3 className="text-xl font-semibold mb-2">Early Registrations (until 14/08/2025):</h3>
               <div className="overflow-auto">
                 <table className="min-w-full border border-gray-300 text-sm md:text-base">
                   <thead className="bg-gray-200">
@@ -497,7 +546,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-2">Late Registrations (01/08/2025 to 31/10/25):</h3>
+              <h3 className="text-xl font-semibold mb-2">Late Registrations (15/08/2025 to 31/10/25):</h3>
               <div className="overflow-auto">
                 <table className="min-w-full border border-gray-300 text-sm md:text-base">
                   <thead className="bg-gray-200">

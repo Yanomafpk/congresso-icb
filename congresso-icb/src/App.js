@@ -14,6 +14,7 @@ function App() {
   const abstractRef = useRef(null);
   const posterInformation = useRef(null);
   const registration = useRef(null);
+  const locationRef = useRef(null);
   
 
   const handleScrollTo = (ref) => {
@@ -382,6 +383,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
           `}
         >
           <a href="#About" className="text-white hover:text-gray-300" onClick={() => handleScrollTo(aboutRef)}>About</a>
+          <a href="#Location" className="text-white hover:text-gray-300" onClick={() => handleScrollTo(locationRef)}>Location</a>
           <a href="#Abstract" className="text-white hover:text-gray-300" onClick={() => handleScrollTo(abstractRef)}>Abstracts</a>
           <a href="#PosterInformation" className="text-white hover:text-gray-300" onClick={() => handleScrollTo(posterInformation)}>Posters</a>
           <a href="#Registration" className="text-white hover:text-gray-300" onClick={() => handleScrollTo(registration)}>Registration</a>
@@ -429,7 +431,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
         </p>
       </div>
 
-      <div className="mt-8 px-8 md:px-16">
+      <div className="mt-8 px-8 md:px-16" ref={locationRef} id="Location">
         <h1 className="text-3xl font-inter font-bold text-customColor text-center">Location</h1>
         <div className="w-full h-px bg-gray-500 mt-4 mx-auto"></div>
         <p className="mt-6 text-left text-base">

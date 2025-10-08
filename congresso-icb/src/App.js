@@ -394,17 +394,19 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
       </header>
 
       <div className="flex flex-col items-center mt-8 space-y-4">
-        <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 w-full max-w-3xl mx-auto mb-4">
-          <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <svg className="h-5 w-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2h-1V9a1 1 0 00-1-1z" clipRule="evenodd" />
-              </svg>
-            </div>
-            <div className="ml-3">
-              <p className="text-sm text-yellow-800 font-medium">
-                IMPORTANT: Early registration deadline has been extended to August 14th, 2025!
-              </p>
+        <div className="flex flex-col md:flex-row items-center w-full max-w-3xl mx-auto gap-2 mb-4">
+          <div className="bg-blue-100 border-l-4 border-blue-500 p-4 w-full md:w-full flex-grow min-h-[90px] md:min-h-[90px] mb-2 md:mb-0 flex items-center">
+            <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <svg className="h-5 w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2h-1V9a1 1 0 00-1-1z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <div className="ml-3">
+                <p className="text-sm text-blue-800 font-medium">
+                  Attention! We will have a preparatory Graduate Course for FARM-DNA – more information <a href="/Curso_Pós_FARMDNA-Flyer 2.pdf" target="_blank" rel="noopener noreferrer" className="underline text-blue-700 hover:text-blue-900" download="arquivo.pdf">here</a>.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -435,14 +437,14 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
         <h1 className="text-3xl font-inter font-bold text-customColor text-center">Location</h1>
         <div className="w-full h-px bg-gray-500 mt-4 mx-auto"></div>
         <p className="mt-6 text-left text-base">
-          The conference will take place at the Institute of Chemistry, University of São Paulo (USP).
+          The conference will take place at the Instituto Principia.
         </p>
         <p className="mt-2 text-left text-base">
-          <strong>Address:</strong> Av. Prof. Lineu Prestes, 748 - Butantã, São Paulo - SP, 05508-900
+          <strong>Address:</strong> R. Pamplona, 145 - Cerqueira César, São Paulo - SP, 01405-900
         </p>
         <p className="mt-2 text-left text-base">
           <a 
-            href="https://www.google.com/maps/place/Av.+Prof.+Lineu+Prestes,+748+-+Butant%C3%A3,+S%C3%A3o+Paulo+-+SP,+05508-000/@-23.5652968,-46.7258274,1086m/data=!3m2!1e3!4b1!4m6!3m5!1s0x94ce564179cecaf5:0xeadbfd378f93bec!8m2!3d-23.5652968!4d-46.7258274!16s%2Fg%2F11nnt06l7q?entry=ttu&g_ep=EgoyMDI1MDczMC4wIKXMDSoASAFQAw%3D%3D" 
+            href="https://www.google.com/maps/place/Instituto+Principia/@-23.5598011,-46.6536727,1051m/data=!3m2!1e3!4b1!4m16!1m9!4m8!1m0!1m6!1m2!1s0x94ce59c9e766dbfb:0x14e76ab28ace4229!2sR.+Pamplona,+145+-+Cerqueira+C%C3%A9sar,+S%C3%A3o+Paulo+-+SP,+01405-900!2m2!1d-46.6510978!2d-23.559806!3m5!1s0x94ce59c9e766dbfb:0x14e76ab28ace4229!8m2!3d-23.559806!4d-46.6510978!16s%2Fg%2F11b6hrnssf?entry=ttu&g_ep=EgoyMDI1MTAwNC4wIKXMDSoASAFQAw%3D%3D" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="inline-flex items-center text-blue-600 hover:text-blue-800"

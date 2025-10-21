@@ -43,33 +43,28 @@ function App() {
   const daySchedules = {
     day1: [
       {
-        time: "8:00 - 10:00",
+        time: "from 10:00",
         title: "Registration",
-        description: "(short courses on DNA repair and Mutagenesis from 10:00 to 12:30 hs)"
+        description: ""
       },
       {
-        time: "10:00 - 12:00",
-        title: "Debate of the Theme (The Evolution is a Fact)",
-        description: "(in Portuguese) with the book (same title) published by the Brazilian Academy of Sciences in 2024, with the participation of students from a public High School."
-      },
-      {
-        time: "14:00 - 14:30",
+        time: "14:00",
         title: "VII FARM-DNA Opening",
-        description: "Carlos Frederico Martins Menck - Why do we need a FARM-DNA meeting in Brazil?"
+        description: "Why do we need a FARM-DNA meeting in Brazil? - Carlos Frederico Martins Menck"
       },
       {
         time: "14:30 - 16:00",
-        title: "Opening Lectures",
+        title: "Opening Lectures (30-45 minutes)",
         isComplex: true,
         content: (
           <div className="mt-2 text-left">
             <div className="mb-3 text-left">
-              <p className="font-medium  text-gray-600 text-left ">Chair: Nadja C. de Souza-Pinto</p>
+              <p className="font-medium text-gray-600 text-left">14:30 - Chair: Nadja C. de Souza-Pinto</p>
               <p className="font-medium text-gray-900 text-left">Andres Aguilera, Universidad de Sevilla, Seville, Spain</p>
               <p className="text-sm text-gray-600 text-left">Transcription-replication conflicts in genome instability, a different role for RNA and chromatin</p>
             </div>
             <div className="text-left">
-              <p className="font-medium  text-gray-600 text-left">Chair: Carlos Frederico Martins Menck</p>
+              <p className="font-medium text-gray-600 text-left">15:15 - Chair: Carlos Frederico Martins Menck</p>
               <p className="font-medium text-gray-900 text-left">Alain Sarasin, Institut Goustave Roussi, Villejuif, France</p>
               <p className="text-sm text-gray-600 text-left">Genomic Analysis of Internal Cancers from Xeroderma Pigmentosum Patients Revealed New Mechanisms of Endogenous Mutagenesis</p>
             </div>
@@ -87,8 +82,7 @@ function App() {
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
-              <p className="font-medium  text-gray-600 text-left">Chair: Roger Woodgate</p>
-              <p className="text-sm text-gray-600 text-left">Targeting tumour DNA repair vulnerabilities to generate new cancer therapies</p>
+              <p className="font-medium text-gray-600 text-left">Chair: Roger Woodgate</p>
             </div>
             <div>
               <p className="font-medium text-gray-900 text-left">Jenifer Saffi, UFSPA, RS, Brazil</p>
@@ -108,6 +102,8 @@ function App() {
             </div>
             <div>
               <p className="text-sm text-gray-600 text-left">Short talk (15 min)</p>
+              <p className="font-medium text-gray-900 text-left">Patricia Abrão Possik, Brazilian National Cancer Institute (INCA), Rio de Janeiro, RJ, Brazil</p>
+              <p className="text-sm text-gray-600 text-left">Modelling Acral Melanoma in Admixed Brazilians Uncovers Genomic Drivers and Targetable Pathways</p>
             </div>
           </div>
         )
@@ -125,7 +121,9 @@ function App() {
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
-              <p className="font-medium  text-gray-600 text-left">Chair: Leonardo Karam Teixeira</p>
+              <p className="font-medium text-gray-600 text-left">Chair: Leonardo Karam Teixeira</p>
+            </div>
+            <div>
               <p className="font-medium text-gray-900 text-left">Andre Nussenzweig, National Cancer Institute National Institutes of Health, Rockville, MD, USA</p>
               <p className="text-sm text-gray-600 text-left">Structure and repair of replication-coupled DNA breaks</p>
             </div>
@@ -134,8 +132,8 @@ function App() {
               <p className="text-sm text-gray-600 text-left">Chromosomal instability: a prelude to cell killing or an avoidable side effect of chemotherapy</p>
             </div>
             <div>
-              <p className="font-medium text-gray-900 text-left">Keith Caldecott, University of Sussex, Falmer, Brighton, UK</p>
-              <p className="text-sm text-gray-600 text-left">PARP activity in DNA replication, repair and human disease</p>
+              <p className="font-medium text-gray-900 text-left">Ryan Barnes, University of Kansas Cancer Center, Kansas City, KS, USA</p>
+              <p className="text-sm text-gray-600 text-left">Oxidative Base Damage to Telomeres Sensitizes Cancer Cells to ATR Inhibition</p>
             </div>
             <div>
               <p className="font-medium text-gray-900 text-left">Maria Carolina Q B Elias Sabbaga, Instituto Butantan, São Paulo, Brazil</p>
@@ -143,6 +141,8 @@ function App() {
             </div>
             <div>
               <p className="text-sm text-gray-600 text-left">Short talk (15 min)</p>
+              <p className="font-medium text-gray-900 text-left">Anna Beatriz Ribeiro Elias, Brazilian National Cancer Institute (INCA), Rio de Janeiro, RJ, Brazil</p>
+              <p className="text-sm text-gray-600 text-left">An unexpected role of PALB2 links homologous recombination and centrosome biology</p>
             </div>
           </div>
         )
@@ -158,7 +158,9 @@ function App() {
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
-              <p className="font-medium  text-gray-600 text-left">Chair: Rodrigo Galhardo</p>
+              <p className="font-medium text-gray-600 text-left">Chair: Rodrigo Galhardo</p>
+            </div>
+            <div>
               <p className="font-medium text-gray-900 text-left">Vilhelm Bohr, University of Copenhagen, Copenhagen, Denmark</p>
               <p className="text-sm text-gray-600 text-left">DNA damage signaling to mitochondria in neurodegeneration and aging</p>
             </div>
@@ -176,6 +178,8 @@ function App() {
             </div>
             <div>
               <p className="text-sm text-gray-600 text-left">Short talk (15 min)</p>
+              <p className="font-medium text-gray-900 text-left">Mariana Marcela Gois, School of Applied Sciences, University of Campinas, Brazil</p>
+              <p className="text-sm text-gray-600 text-left">The regulation of homologous recombination by the S6K proteins</p>
             </div>
           </div>
         )
@@ -191,12 +195,12 @@ function App() {
         content: (
           <div className="mt-2 text-left">
             <div className="mb-3 text-left">
-              <p className="font-medium  text-gray-600 text-left">Chair: Carlos Renato Machado</p>
+              <p className="font-medium text-gray-600 text-left">14:00 - Chair: Carlos Renato Machado</p>
               <p className="font-medium text-gray-900 text-left">Richard McCulloch, University of Glasgow, Glasgow, UK</p>
               <p className="text-sm text-gray-600 text-left">A coherent model for the initiation and execution of trypanosome immune evasion through targeted antigen gene recombination?</p>
             </div>
             <div className="text-left">
-              <p className="font-medium  text-gray-600 text-left">Chair: Carlos Frederico Martins Menck</p>
+              <p className="font-medium text-gray-600 text-left">14:45 - Chair: Carlos Frederico Martins Menck</p>
               <p className="font-medium text-gray-900 text-left">Roger Woodgate, National Institutes of Health, Bethesda, MD, USA</p>
               <p className="text-sm text-gray-600 text-left">Regulation of Highly Mutagenic PolVR391 in Enterobacteriaceae</p>
             </div>
@@ -214,7 +218,9 @@ function App() {
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
-              <p className="font-medium  text-gray-600 text-left">Chair: Nicolas Carlos Hoch</p>
+              <p className="font-medium text-gray-600 text-left">Chair: Nicolas Carlos Hoch</p>
+            </div>
+            <div>
               <p className="font-medium text-gray-900 text-left">Rodrigo Galhardo, Institute of Biomedical Sciences, Universidade de São Paulo, Brazil</p>
               <p className="text-sm text-gray-600 text-left">Unveiling novel DNA repair pathways in bacteria</p>
             </div>
@@ -231,7 +237,7 @@ function App() {
       },
       {
         time: "17:30 - 19:30",
-        title: "Poster Session & Coffee break",
+        title: "Coffee break in the Poster Session",
         description: "Networking and poster presentations"
       }
     ],
@@ -243,13 +249,11 @@ function App() {
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
-              <p className="font-medium  text-gray-600 text-left">Chair: Nadja C de Souza-Pinto</p>
-              <p className="font-medium text-gray-900 text-left">Nicolas Carlos Hoch, Institute of Chemistry, University of São Paulo, Brazil</p>
-              <p className="text-sm text-gray-600 text-left">Molecular mechanisms of cell death by PARP1 hyperactivation</p>
+              <p className="font-medium text-gray-600 text-left">Chair: Nadja C de Souza-Pinto</p>
             </div>
             <div>
-              <p className="font-medium text-gray-900 text-left">Evi Soutoglou, University of Sussex, Brighton, UK</p>
-              <p className="text-sm text-gray-600 text-left">Genome organization in DNA repair</p>
+              <p className="font-medium text-gray-900 text-left">Nicolas Carlos Hoch, Institute of Chemistry, University of São Paulo, Brazil</p>
+              <p className="text-sm text-gray-600 text-left">Molecular mechanisms of cell death by PARP1 hyperactivation</p>
             </div>
             <div>
               <p className="font-medium text-gray-900 text-left">Hannes Lans, Erasmus Medical Center, Rotterdam, The Netherlands</p>
@@ -261,6 +265,12 @@ function App() {
             </div>
             <div>
               <p className="text-sm text-gray-600 text-left">Short talk (15 min)</p>
+              <p className="font-medium text-gray-900 text-left">Alexander Ishchenko, Institut Goustave Roussi, Villejuif, France</p>
+              <p className="text-sm text-gray-600 text-left">Deciphering the mechanisms of PARP-dependent DNA breaks ADP-ribosylation</p>
+            </div>
+            <div>
+              <p className="text-sm text-gray-600 text-left">Short talk (15 min)</p>
+              <p className="font-medium text-gray-900 text-left">Yuli Thamires Magalhães, Institute of Chemistry, University of São Paulo, Brazil</p>
             </div>
           </div>
         )
@@ -271,12 +281,14 @@ function App() {
       },
       {
         time: "11:00 - 13:00",
-        title: "Symposium 6 – DNA damage signaling in Eukaryotic cells",
+        title: "Symposium 6 – DNA damage signaling in model organisms",
         isComplex: true,
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
-              <p className="font-medium  text-gray-600 text-left">Chair: Marcus Smolka</p>
+              <p className="font-medium text-gray-600 text-left">Chair: Marcus Smolka</p>
+            </div>
+            <div>
               <p className="font-medium text-gray-900 text-left">Marcelo Santos da Silva, Institute of Chemistry, University of São Paulo, Brazil</p>
               <p className="text-sm text-gray-600 text-left">Analysis of cytotoxicity caused by thymidine analogs (BrdU and EdU) incorporation in trypanosomatids</p>
             </div>
@@ -294,6 +306,8 @@ function App() {
             </div>
             <div>
               <p className="text-sm text-gray-600 text-left">Short talk (15 min)</p>
+              <p className="font-medium text-gray-900 text-left">Alexey Ruzov, Research Centre of Biotechnology, Moscow, Russia</p>
+              <p className="text-sm text-gray-600 text-left">The interplay between adenosine methylation and alkylation damage reversal repair in bacterial R-loop regulation</p>
             </div>
           </div>
         )
@@ -309,9 +323,11 @@ function App() {
         content: (
           <div className="space-y-3 mt-2 text-left">
             <div>
-              <p className="font-medium  text-gray-600 text-left">Chair: Vanesa Gottifredi</p>
+              <p className="font-medium text-gray-600 text-left">Chair: Vanesa Gottifredi</p>
+            </div>
+            <div>
               <p className="font-medium text-gray-900 text-left">Luís LF Batista, Washington University, St. Louis, USA</p>
-              <p className="text-sm text-gray-600 text-left">Genomic instability – a unifying feature of bone marrow failure syndromes</p>
+              <p className="text-sm text-gray-600 text-left">Post-transcriptional Modifications to hTR Determine Telomerase Decay and Function</p>
             </div>
             <div>
               <p className="font-medium text-gray-900 text-left">Gianluca Tell, University of Udine, Udine, Italy</p>
@@ -338,17 +354,17 @@ function App() {
       },
       {
         time: "16:30 - 18:00",
-        title: "Closing Lectures",
+        title: "Closing Lectures (45 min)",
         isComplex: true,
         content: (
           <div className="mt-2 text-left">
             <div className="mb-3 text-left">
-              <p className="font-medium  text-gray-600 text-left">Chair: Carlos Frederico Martins Menck</p>
+              <p className="font-medium text-gray-600 text-left">16:30 - 17:15 - Chair: Carlos Frederico Martins Menck</p>
               <p className="font-medium text-gray-900 text-left">Jan Hoeijmakers, Erasmus Medical Center, Rotterdam, The Netherlands</p>
               <p className="text-sm text-gray-600 text-left">DNA damage and transcription stress and the unexpected impact of nutrition on aging and medicine</p>
             </div>
             <div className="text-left">
-              <p className="font-medium  text-gray-600 text-left">Chair: Roger Woodgate</p>
+              <p className="font-medium text-gray-600 text-left">17:15 - 18:00 - Chair: Roger Woodgate</p>
               <p className="font-medium text-gray-900 text-left">Stephen West, The Francis Crick Institute, London, UK</p>
               <p className="text-sm text-gray-600 text-left">Roles of the RAD51 paralogs in DNA repair and replication fork protection – changing paradigms</p>
             </div>
@@ -457,7 +473,7 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
         </p>
         <div className="mt-4 w-full">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8908386467937!2d-46.73486222363744!3d-23.5647336590376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5613b7453b87%3A0x3858f7e5e05fef0a!2sInstituto%20de%20Qu%C3%ADmica%20da%20Universidade%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1723756958844!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0977295647937!2d-46.653672723469844!3d-23.559806178809897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c9e766dbfb%3A0x14e76ab28ace4229!2sInstituto%20Principia!5e0!3m2!1spt-BR!2sbr!4v1709660000000!5m2!1spt-BR!2sbr"
             width="100%" 
             height="450" 
             style={{border:0}} 
@@ -671,12 +687,6 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
               <h3 className="font-semibold">Jenifer Saffi</h3>
               <p>(UFCSPA, Brazil)</p>
             </div>
-          </div>
-        </div>
-
-        {/* Coluna 2 */}
-        <div className="bg-gray-100 p-4">
-          <div className="space-y-4">
             <div>
               <h3 className="font-semibold">José Renato Cussiol</h3>
               <p>(UNIFESP, Brazil)</p>
@@ -689,6 +699,12 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
               <h3 className="font-semibold">Leonardo Karam Teixeira</h3>
               <p>(INCA, Brazil)</p>
             </div>
+          </div>
+        </div>
+
+        {/* Coluna 2 */}
+        <div className="bg-gray-100 p-4">
+          <div className="space-y-4">
             <div>
               <h3 className="font-semibold">Luís Batista</h3>
               <p>(Washington Univ. St. Louis, USA)</p>
@@ -706,8 +722,16 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
               <p>(Univ. Buenos Aires, Argentina)</p>
             </div>
             <div>
-              <h3 className="font-semibold">Marcus Smolka</h3>
+              <h3 className="font-semibold">Marcus Smolka</h3>
               <p>(Cornell Univ., USA)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Nadja de Souza-Pinto</h3>
+              <p>(USP, Brazil)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Nicolas Carlos Hoch</h3>
+              <p>(USP, Brazil)</p>
             </div>
             <div>
               <h3 className="font-semibold">Patricia Kannouche</h3>
@@ -724,6 +748,18 @@ const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
             <div>
               <h3 className="font-semibold">Richard McCulloch</h3>
               <p>(Univ. Glasgow, Scotland)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Rodrigo Galhardo</h3>
+              <p>(USP, Brazil)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Roger Woodgate</h3>
+              <p>(NIH, USA)</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Ryan Barnes</h3>
+              <p>(Univ. Kansas, USA)</p>
             </div>
             <div>
               <h3 className="font-semibold">Stephen West</h3>
